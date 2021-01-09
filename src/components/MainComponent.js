@@ -28,7 +28,9 @@ class Main extends Component {
     render() {
         const HomePage = () => {
             return (
-                <Home dish={this.state.dishes.filter((dish) => dish.featured)[0]}
+                
+                    <Home 
+                dish={this.state.dishes.filter((dish) =>dish.featured)[0]}
                     promotion={this.state.promotions.filter((promotion) => promotion.featured)[0]}
                     leader={this.state.leaders.filter((leader) => leader.featured)[0]}
                 />
